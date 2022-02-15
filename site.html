@@ -7,141 +7,151 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>The world!</title>
+    <title>FlashCam!</title>
   </head>
-  <body>
-      
+  <body class="bg-info">
+    
       <!--NavBar-->
-    <nav class="navbar navbar-light bg-light fixed-top">
+      <nav class="navbar navbar-light bg-info bg-gradient fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Offcanvas navbar</a>
+          
+          <a class="navbar-brand text-dark fs-4" href="#">FlashCam<img src="https://img.icons8.com/ios-glyphs/30/000000/camera--v2.png"/></a>
+        
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <div class="offcanvas offcanvas-end bg-transparent" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header justify-content-end">
+              
+              <button type="button" class="btn-close text-reset bg-danger" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <div class="offcanvas-header justify-content-center">
+              <h5 class="offcanvas-title text-light fs-3" id="offcanvasNavbarLabel">Menu</h5>
+            </div>
+           
+            <div class="offcanvas-body bg-transparent">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 fs-4">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active text-center text-info" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link text-center text-info" href="https://pixabay.com/pt/images/search/modelos/">Fotografias</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-center text-info" href="#">Instagram</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-center text-info" href="#">facebook</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-center text-info" href="#">linkedin</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                  </a>
                   <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
                 </li>
               </ul>
+              <br>
               <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                
+                <input class="form-control me-2 bg-secondary text-light" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-info text-light" type="submit">pesquisar</button>
               </form>
             </div>
           </div>
         </div>
     </nav>
-        <!--/NavBar-->
-
+        <!--/NavBar-->  
         <!--carroussel-->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+   
+        <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/assets/img/p1.jpg" class="d-block w-100" alt="p1">
+              <div class="carousel-caption d-none d-md-block text-dark">
+                <h5>Fotos Maravilhosas</h5>
+                <p>FAle com a gente e marque um horário.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/assets/img/p2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block text-light">
+                <h5>Diversos Ambientes</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/assets/img/p3.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block text-light">
+                <h5>Reuniões e Palestras</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://s1.1zoom.me/big0/321/Odeya_Rush_Gray_background_Glance_Hands_Pose_Model_599870_1280x720.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://www.wefashiontrends.com/wp-content/uploads/2020/01/tendencia-calca-jeans-modelos-1280x720.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://matriculas.estacio.br/blog/wp-content/uploads/2020/01/56estacio-fotografia-1280x720.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
       <!--/carroussel-->
-
+        
       <!--Jumbotron-->
       
-      <div class="jumbotron jumbotron-fluid">
+      <div class="jumbotron jumbotron-fluid bg-transparent  bg-gradient">
         <div class="container">
-          <h1 class="display-4">Fluid jumbotron</h1>
-          <p class="lead">Este é um jumbotron modificado que ocupa todo o espaço horizontal de seu elemento pai.</p>
+          <h1 class="display-4">Quem Somos</h1>
+          <p class="lead text-dark fs-3"> FlashCam é um studio de fotografia profissional. É uma empresa fictícia, criada com o intuido único de preencher informações dentro desse site. Uso total para aprimoramento de conhecimento.</p>
         </div>
       </div>
       <!--/Jumbotron-->
-
+    
       <!--Cards-->
-    <div class="container">
-        <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="container bg-secondary">
+        <div class="row row-cols-1 row-cols-md-4 g-3">
             <div class="col">
               <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="/assets/img/casal.jpg" class="card-img-top w-100" alt="Casamentos">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h5 class="card-title">Casamentos</h5>
+                  <p class="card-text">Cobrimos Casamentos em todos os seus ambientes, Praia, igreja, e ao ar livre .</p>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="/assets/img/festas.jpg" class="card-img-top" alt="">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h5 class="card-title">Shows</h5>
+                  <p class="card-text">Cobrimos Festas e Shows em todos os seus ambientes, equipamentos de ultima geração para trazer o melhor do seu Show.</p>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="/assets/img/niver.jpg" class="card-img-top" alt="aniversário">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                  <h5 class="card-title">Aniversários</h5>
+                  <p class="card-text">Cobrimos Festas de Aniversário em todos os seus ambientes, equipamentos de ultima geração para trazer o melhor para seu evento.</p>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="/assets/img/reuniao.jpg" class="card-img-top" alt="reunião">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h5 class="card-title">Reuniões</h5>
+                  <p class="card-text">Cobrimos Reuniões e Palestras em todos os seus ambientes, equipamentos de ultima geração para trazer o melhor do seu evento.</p>
                 </div>
               </div>
             </div>
@@ -149,48 +159,74 @@
     
          <!--/Cards-->
          <!--texto e video-->
-        <div class="row mt-5 mb-5">
+        <div class="row mt-5 mb-5 text-center">
             <div class="col-md-6">
-                <h3>Texto Testes</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam maxime perferendis odit quasi autem facere voluptatem laborum numquam! Quaerat perspiciatis eaque tenetur officia officiis maxime vel aspernatur, veritatis fuga laudantium.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse aliquid doloribus tempora recusandae quas cum vitae. Delectus, magni. Animi tempore facere commodi mollitia id consequatur neque aut officiis iusto nihil.</p>
+                <h3>Cursos de Fotografia</h3>
+                <p>Você aprenderá técnicas básicas de fotografia usando câmeras fotográficas profissionais, acessórios e recursos estéticos para capturar e produzir imagens de qualidade.</p>
+                <p>Este curso é para pessoas que querem aprender técnicas básicas de fotografia usando câmeras fotográficas profissionais, acessórios e equipamentos. Também é necessário que você tenha uma câmera digital DSLR ou mirrorless com controle manual de funções e que possibilite a troca e o desencaixe da lente.</p>
             </div>
             <div class="col-md-6">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/RDKnoW2cgwk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/9_qx8FX3IlI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
         <!--/texto e video-->
-
-        <!-- Footer -->
-<footer class="page-footer font-small unique-color-dark pt-4">
-
-    <!-- Footer Elements -->
-    <div class="container">
-  
-      <!-- Call to action -->
-      <ul class="list-unstyled list-inline text-center py-2">
-        <li class="list-inline-item">
-          <h5 class="mb-1">Cadastre-se Gratuitamente</h5>
-        </li>
-        <li class="list-inline-item">
-          <a href="#!" class="btn btn-outline-white btn-rounded">Clique aqui!</a>
-        </li>
-      </ul>
-      <!-- Call to action -->
-  
-    </div>
-    <!-- Footer Elements -->
-  
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
-  
-  </footer>
-  <!-- Footer -->
-    </div> 
-    
+        <!--localização-->
+        <hr>
+        <div class="row mt-5 mb-5 text-center">
+          <div class="col-md-6">
+            <form class="banner">
+              <h2 class="tx p-3">Entre em contato conosco</h2>
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" onkeyup = "validaNome()">
+              <div id="txtNome"></div>
+              <br>
+              <label for="emai">Email:</label>
+              <input type="email" id="email" onkeyup = "validaEmail()">
+              <div id="txtEmail"></div>
+              <br>
+              <label for="assunto">Assunto:</label><br>
+              <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+              <div id="txtAssunto"></div>
+              <br>
+              <button onclick="enviar()">Enviar</button>
+          </form>
+          </div>
+          <div class="col-md-6">
+            <h2>Nos faça uma visita</h2>
+            <p class="txt fz-2">Estrada do Alvarenga, 144</p>
+            <p class="txt fz-3">São Paulo - SP</p>
+            <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.376449775895!2d-46.67376298538046!3d-23.69824717254595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4f8a12cc8cfd%3A0xfcb55cd09b8d4bd7!2sEstr.%20do%20Alvarenga%2C%20144%20-%20Jardim%20Pedreira%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004474-340!5e0!3m2!1spt-BR!2sbr!4v1644537743463!5m2!1spt-BR!2sbr" width="390" height="250" style="border:0;" allowfullscreen="" loading="lazy" onmousemove="mapaZoom()" onmouseout="mapaNormal()"></iframe>
+          </div>
+      </div>
+ 
+        <!--/localização-->
+        <section class="row">
+          <!-- Footer -->
+          <footer class="text-center text-white w-100" style="background-color: #0a4275;">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+              <!-- Section: CTA -->
+              <section class="row">
+                <p class="d-flex justify-content-center align-items-center">
+                  <span class="me-3">Register for free</span>
+                  <button type="button" class="btn btn-outline-light btn-rounded">
+                    Sign up!
+                  </button>
+                </p>
+              </section>
+              <!-- Section: CTA -->
+            </div>
+            <!-- Grid container -->
+            <hr>
+            <!-- Copyright -->
+            <div class="text-center p-0" style="background-color: #0a4275;">
+              Igor Mendes© 2020 Copyright:
+              <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+          <!-- Footer -->
+        </section>
    
 
 
